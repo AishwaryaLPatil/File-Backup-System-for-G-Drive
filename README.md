@@ -48,14 +48,12 @@ cd /backup/
 ```
 
 ```
+sudo systemctl start docker
+```
+
+```
 docker login
 ```
-
-```
-sudo apt install docker-compose 
-```
-(install if not there)
-
 
 ```
 docker build -t aishwarya166/cc_cronbackup_image:latest .
