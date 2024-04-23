@@ -53,13 +53,15 @@ docker login
 
 ```
 sudo apt install docker-compose 
-(install if not there)
 ```
+(install if not there)
+
 
 ```
 docker build -t aishwarya166/cc_cronbackup_image:latest .
-(u can replace with any repository name created on your docker hub)
 ```
+(u can replace with any repository name created on your docker hub)
+
 
 ```
 docker push aishwarya166/cc_cronbackup_image:latest
@@ -98,7 +100,7 @@ kubectl get pods --watch
 kubectl logs job_name
 ```
 
-#### For changing updating the contents of the backup folder, 
+#### For updating the contents of the backup folder, 
 
 get the container in which the image is running:
 ```
