@@ -1,6 +1,5 @@
-# 027_052_062_739
 
-## GDrive Backup using Docker & Kubernetes
+## File Backup System for G-Drive
 
 Python script `main2.py` monitors a directory (`backupfiles`), uploads any newly created, modified, or moved files to Google Drive using the Google Drive API. There's a Dockerfile to containerize your application, Docker Compose to manage the Docker container, a shell script (`entrypoint.sh`) to restart the container when changes are detected in the `backupfiles` directory, and Kubernetes manifests for setting up a CronJob to periodically trigger the backup process, and Persistent Volume (PV) and Persistent Volume Claim (PVC) for storing backup files persistently.
 
@@ -109,4 +108,11 @@ docker ps --filter ancestor=aishwarya166/cc_cronbackup_image
 ```
 ./entrypoint.sh
 ``` 
-
+### Team Members:
+Aishwarya L Patil
+<br/>
+Akshatha M K
+<br/>
+Achala Nayak
+<br/>
+A Geethika Chowdary
